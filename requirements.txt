@@ -1,0 +1,11 @@
+torch
+torchrl
+gymnasium[classic-control]
+tqdm
+pettingzoo[all]
+vmas
+imageio
+matplotlib
+mpe2
+tensorboard
+numpy
