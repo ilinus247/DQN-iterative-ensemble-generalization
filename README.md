@@ -3,9 +3,9 @@
 The core idea behind experiments in this repository is to use iterative counter-adaptation of competitive MARL policies to create an ensemble of diverse and self-improved policies to improve the generalization of policies against environmental or adversarial shifts. The simple intuition behind this is that in the case of competitive MARL, both policies are seeking to exploit faults in the other. If we allow one side to 'overfit' to these faults, then the other can identify and adapt against the exploit when trained later. Collecting such policies, then, should produce a portfolio of them resistant to various exploits.  
 
 An algorithm like...
-    1. Freeze Ad, train ONLY Ag for K iterations  -> Ag'
-    2. Freeze Ag', train ONLY Ad for K iterations -> Ad'
-    3. Save Ad' as ensemble member
+*    1. Freeze Ad, train ONLY Ag for K iterations  -> Ag'
+*    2. Freeze Ag', train ONLY Ad for K iterations -> Ad'
+*    3. Save Ad' as ensemble member
 can produce one ensemble member per iteration, so that every Ad' is adapted to the faults of Ag', that was in turn adapted to the faults of Ad.
 
 ## Current Progress
