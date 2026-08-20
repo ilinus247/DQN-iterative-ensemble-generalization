@@ -6,7 +6,7 @@ An algorithm like...
 *    1. Freeze Ad, train ONLY Ag for K iterations  -> Ag'
 *    2. Freeze Ag', train ONLY Ad for K iterations -> Ad'
 *    3. Save Ad' as ensemble member
-can produce one ensemble member per iteration, so that every Ad' is adapted to the faults of Ag', that was in turn adapted to the faults of Ad.
+* can produce one ensemble member per iteration, so that every Ad' is adapted to the faults of Ag', that was in turn adapted to the faults of Ad.
 
 ## Current Progress
 
